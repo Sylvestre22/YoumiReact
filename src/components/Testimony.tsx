@@ -2,6 +2,10 @@ import React, {FunctionComponent as FC, useState, useEffect} from 'react';
 import WorldMap from '../images/map-1-1.png'
 import RoundedCircle from '../images/round-circle-1-6.png'
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 interface ITestimony {
     text: string,
     author: string
@@ -16,20 +20,14 @@ const Testimony:FC = ():JSX.Element=>{
         {text: 'A cause de la crise sanitaire, mon activité de coach sportif a ralenti mais désormais grâce à YOUMI et la diffusion de mes cours personnalisés en ligne, je génère un nouveau complément de revenus.', author: 'Kyle Demayo'}
     ])
 
-    const [current, setCurrent] = useState(0),
-    length = testimony.length
-
     const slider = testimony.map((slide, index) => 
-        <li key={index} className={"slide-item" + (index === current ? ' slide active' : ' slide')}>
+        <div key={index} className="slide-item">
             <div className="single-testi-one">
                 <p>{slide.text}</p>
                 <h3>{slide.author}</h3>
             </div>
-        </li>
+        </div>
     )
-
-    const nextSlide = () => setCurrent(current === length - 1 ? 0 : current + 1),
-    prevSlide = () => setCurrent(current === 0 ? length - 1 : current - 1)
 
     return(
         <section className="testimonials-style-one">
@@ -67,9 +65,10 @@ const Testimony:FC = ():JSX.Element=>{
                         <div className="bx-wrapper mw-100">
                             <div className="bx-wiewport w-100">
                                 <ul className="slider testimonials-slider">
-                                    {slider}
+                                    <OwlCarousel loop nav autoplay autoplayHoverPause smartSpeed={700} autoplayTimeout={5000} items={1} controls navText={['<i className="opins-icon-left"></i>', '<i className="opins-icon-right"></i>']}>
+                                        {slider}
+                                    </OwlCarousel>
                                 </ul>
-                                <button onClick={prevSlide}>prev</button><button onClick={nextSlide}>next</button>
                             </div>
                         </div>
                     </div>

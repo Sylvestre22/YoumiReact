@@ -1683,6 +1683,8 @@ hr.style-one {
     bottom: -10px;
     right: 0;
     background-color: #F2FFF8;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .testimonials-style-one .testi-carousel-one .owl-nav [class*=owl-] {
@@ -1857,19 +1859,6 @@ hr.style-one {
 #testimonials-slider-pager .testimonials-slider-pager-two .pager-item>img {
     width: 100%;
     border-radius: 50%;
-}
-
-.slide {
-    opacity: 0;
-    transition: all 1s ease;
-    display: none;
-}
-
-.slide.active {
-    opacity: 1;
-    transition: all 1s ease;
-    transform: scale(1.08);
-    display: inline;
 }
 
 
