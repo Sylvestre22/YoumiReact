@@ -65,7 +65,7 @@ const Testimony:FC = ():JSX.Element=>{
                         <div className="bx-wrapper mw-100">
                             <div className="bx-wiewport w-100">
                                 <ul className="slider testimonials-slider">
-                                    <OwlCarousel loop nav autoplay autoplayHoverPause smartSpeed={700} autoplayTimeout={5000} items={1} controls navText={['<i className="opins-icon-left"></i>', '<i className="opins-icon-right"></i>']}>
+                                    <OwlCarousel loop nav autoplay autoplayHoverPause smartSpeed={700} autoplayTimeout={5000} items={1} controls navText={['<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>', '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>']}>
                                         {slider}
                                     </OwlCarousel>
                                 </ul>

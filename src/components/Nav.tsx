@@ -1,4 +1,5 @@
 import React, {FunctionComponent as FC, useState, useEffect} from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const Nav:FC = ():JSX.Element =>{
     const [isOpen, setIsOpen] = useState(false),
@@ -15,9 +16,9 @@ const Nav:FC = ():JSX.Element =>{
             <nav className={(navIsFixed ? 'stricky-fixed slideInDown ' : 'slideIn ') + "navbar navbar-expand-lg navbar-light header-navigation stricky animated"}>
                 <div className="container clearfix">
                     <div className="logo-box clearfix">
-                        <a className="navbar-brand" href="index.html">
+                        <HashLink to="/#banner" className="navbar-brand" href="index.html">
                             <img src="images/logo-1-1.png" alt="LOGO" />
-                        </a>
+                        </HashLink>
                         <button className="menu-toggler" data-target=".header-one .main-navigation">
                             <span className="fa fa-bars" onClick={()=> setIsOpen((!isOpen))}></span>
                         </button>
@@ -25,15 +26,15 @@ const Nav:FC = ():JSX.Element =>{
                     <div className={isOpen ? 'main-navigation showen' : 'main-navigation'} style={isOpen ? {display: 'block'} : {display: 'none'}}>
                         <ul className="one-page-scroll-menu navigation-box">
                             <li className="scrollToLink">
-                                <a href="#banner">Home</a>
+                                <HashLink to="/#banner">Home</HashLink>
                             </li>
-                            <li className="scrollToLink"><a href="#service">Features</a></li>
-                            <li className="scrollToLink"><a href="#features">App Screens</a></li>
-                            <li className="scrollToLink"><a href="#pricing">Pricing</a></li>
+                            <li className="scrollToLink"><HashLink to="/#service">Features</HashLink></li>
+                            <li className="scrollToLink"><HashLink to="/#features">App Screens</HashLink></li>
+                            <li className="scrollToLink"><HashLink to="/#pricing">Pricing</HashLink></li>
                         </ul>
                     </div>
                     <div className="right-side-box">
-                        <a href="##" className="header-btn">Login</a>
+                        <HashLink to="/login#" className="header-btn">Login</HashLink>
                     </div>
                 </div>
             </nav>

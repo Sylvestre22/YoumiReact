@@ -1677,14 +1677,24 @@ hr.style-one {
     margin-top: 40px;
 }
 
+.owl-carousel div.owl-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.owl-carousel div.owl-nav svg {
+    height: 60px;
+    width: 60px;
+    padding: 0 10px;
+    opacity: 0.6;
+}
+
 .testimonials-style-one .testi-carousel-one .owl-nav {
     margin: 0;
     position: absolute;
     bottom: -10px;
     right: 0;
     background-color: #F2FFF8;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .testimonials-style-one .testi-carousel-one .owl-nav [class*=owl-] {
@@ -2739,4 +2749,36 @@ hr.style-one {
     right: 50px;
     transform: translateY(-50%);
     font-size: 16px;
+}
+
+
+/*
+* 17.Login
+*/
+
+.login-wrapper {
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 220px;
+    background: #fff url(../images/banner-bg-1-1.png) top right no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+* 18.Register
+*/
+
+.register-wrapper {
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 220px;
+    background: #fff url(../images/banner-bg-1-1.png) top right no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
