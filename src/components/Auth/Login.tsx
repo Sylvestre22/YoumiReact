@@ -27,24 +27,24 @@ const Login:FC = ():JSX.Element =>{
     }
 
     return(
-        <section className="login-wrapper">
-            <h2>Connexion</h2>
-            <form onSubmit={sendData}>
+        <section className="login-wrapper" id="login">
+            <h2 className="h2-title">Connexion</h2>
+            <form className="authForm container" onSubmit={sendData}>
                 { error.status && 
                     error.text?.map((e, index) =>
-                        <li style={{color: 'red'}} key={index}>{e}</li>
+                        <p className="authForm-error" key={index}>{e}</p>
                 )
                 }
                 <label>
-                    <p>Username*</p>
+                    <p>Username *</p>
                     <input type="text" onChange={e => setUserName(e.currentTarget.value)}/>
                     </label>
                 <label>
-                    <p>Password*</p>
+                    <p>Password *</p>
                     <input type="password" onChange={e => setPassword(e.currentTarget.value)}/>
                 </label>
                 <div>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Connexion</button>
                 </div>
             </form>
             <p>Vous n'êtes pas encore inscrit ?</p>

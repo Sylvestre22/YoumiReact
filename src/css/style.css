@@ -86,7 +86,8 @@ hr.style-one {
     margin-bottom: 50px;
 }
 
-.block-title h2 {
+.block-title h2,
+.h2-title {
     margin: 0;
     color: #273167;
     font-size: 46px;
@@ -2753,9 +2754,10 @@ hr.style-one {
 
 
 /*
-* 17.Login
+* 18.Register/Login
 */
 
+.register-wrapper,
 .login-wrapper {
     position: relative;
     padding-top: 300px;
@@ -2767,18 +2769,87 @@ hr.style-one {
     align-items: center;
 }
 
-
-/*
-* 18.Register
-*/
-
-.register-wrapper {
-    position: relative;
-    padding-top: 300px;
-    padding-bottom: 220px;
-    background: #fff url(../images/banner-bg-1-1.png) top right no-repeat;
+.authForm {
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.authForm label,
+.authForm>div:last-child {
+    width: 40%;
+    margin: auto;
+}
+
+.authForm input {
+    width: 100%;
+}
+
+.authForm div:last-child {
+    margin-top: 30px;
+}
+
+.authForm input {
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    height: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.authForm input:focus {
+    border-color: #e94fca;
+}
+
+.authForm button[type="submit"] {
+    background-color: #e84fc9;
+    color: white;
+    border: none;
+    box-shadow: 0px 15px 30px 0px rgba(233, 79, 202, 0.1);
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.authForm button[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+.authForm-error {
+    color: #c43b3b;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    .register-wrapper,
+    .login-wrapper {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:1000px) {
+    .authForm label,
+    .authForm>div:last-child {
+        width: 70%;
+    }
+    .register-wrapper,
+    .login-wrapper {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width:450px) {
+    .authForm label,
+    .authForm>div:last-child {
+        width: 90%;
+    }
+}
+
+@media (max-width:750px) {
+    .authForm button[type="submit"] {
+        width: 100% !important;
+    }
 }

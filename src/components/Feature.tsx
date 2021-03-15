@@ -24,7 +24,7 @@ const Feature:FC = ():JSX.Element =>{
                                 <li><i className="fa fa-check"></i> Partagez et trouvez du contenu de qualité</li>
                                 <li><i className="fa fa-check"></i> Protégez efficacement votre travail</li>
                             </ul>
-                            <a href="#" className="feature-btn">Learn More</a>
+                            <a href="/" className="feature-btn">Learn More</a>
                         </div>
                     </div>
                 </div>

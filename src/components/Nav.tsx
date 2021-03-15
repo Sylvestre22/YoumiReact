@@ -1,5 +1,6 @@
 import React, {FunctionComponent as FC, useState, useEffect} from 'react';
 import { HashLink } from 'react-router-hash-link';
+import Scrollspy from 'react-scrollspy';
 
 const Nav:FC = ():JSX.Element =>{
     const [isOpen, setIsOpen] = useState(false),
@@ -24,14 +25,12 @@ const Nav:FC = ():JSX.Element =>{
                         </button>
                     </div>
                     <div className={isOpen ? 'main-navigation showen' : 'main-navigation'} style={isOpen ? {display: 'block'} : {display: 'none'}}>
-                        <ul className="one-page-scroll-menu navigation-box">
-                            <li className="scrollToLink">
-                                <HashLink to="/#banner">Home</HashLink>
-                            </li>
-                            <li className="scrollToLink"><HashLink to="/#service">Features</HashLink></li>
-                            <li className="scrollToLink"><HashLink to="/#features">App Screens</HashLink></li>
-                            <li className="scrollToLink"><HashLink to="/#pricing">Pricing</HashLink></li>
-                        </ul>
+                            <Scrollspy className="one-page-scroll-menu navigation-box" items={['banner', 'service', 'features', 'pricing']} currentClassName="current" offset={-1}>
+                                        <li className="scrollToLink"><HashLink to="/#banner">Home</HashLink></li>
+                                        <li className="scrollToLink"><HashLink to="/#service">Features</HashLink></li>
+                                        <li className="scrollToLink"><HashLink to="/#features">App Screens</HashLink></li>
+                                        <li className="scrollToLink"><HashLink to="/#pricing">Pricing</HashLink></li>
+                            </Scrollspy>
                     </div>
                     <div className="right-side-box">
                         <HashLink to="/login#" className="header-btn">Login</HashLink>

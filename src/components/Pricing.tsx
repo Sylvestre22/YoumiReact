@@ -24,14 +24,14 @@ const Pricing:FC = ():JSX.Element =>{
                 </div>
                 <ul className="nav nav-tabs tab-title" role="tablist">
                     <li className="nav-item">
-                        <a className={"nav-link " + (period == 'monthly' ? 'active' : '')} href="#monthly" role="tab" data-toggle="tab" onClick={changePeriod}>Monthly</a>
+                        <a className={"nav-link " + (period === 'monthly' ? 'active' : '')} href="#monthly" role="tab" data-toggle="tab" onClick={changePeriod}>Monthly</a>
                     </li>
                     <li className="nav-item">
-                        <a className={"nav-link " + (period == 'yearly' ? 'active' : '')} href="#yearly" role="tab" data-toggle="tab" onClick={changePeriod}>Yearly</a>
+                        <a className={"nav-link " + (period === 'yearly' ? 'active' : '')} href="#yearly" role="tab" data-toggle="tab" onClick={changePeriod}>Yearly</a>
                     </li>
                 </ul>
                 <div className="tab-content">
-                    <div role="tabpanel" className={"tab-pane animated fadeInUp " + (period == 'monthly' ? 'active' : '')}>
+                    <div role="tabpanel" className={"tab-pane animated fadeInUp " + (period === 'monthly' ? 'active' : '')}>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="single-pricing-one basic-pack">
@@ -47,7 +47,7 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>
@@ -85,14 +85,14 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" className={"tab-pane animated fadeInUp " + (period == 'yearly' ? 'active' : '')}>
+                    <div role="tabpanel" className={"tab-pane animated fadeInUp " + (period === 'yearly' ? 'active' : '')}>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="single-pricing-one basic-pack">
@@ -108,7 +108,7 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@ const Pricing:FC = ():JSX.Element =>{
                                         <li>Full access</li>
                                     </ul>
                                     <div className="bottom-block">
-                                        <a href="#" className="price-btn">Purchase</a>
+                                        <a href="/" className="price-btn">Purchase</a>
                                         <span className="tag-line">No hidden charges!</span>
                                     </div>
                                 </div>

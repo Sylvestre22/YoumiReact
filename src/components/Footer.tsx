@@ -36,11 +36,11 @@ const Footer:FC = ():JSX.Element => {
                                         <h3>Explore</h3>
                                     </div>
                                     <ul className="links-list">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Our Team</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">How It Works</a></li>
+                                        <li><a href="/">About</a></li>
+                                        <li><a href="/">Our Team</a></li>
+                                        <li><a href="/">Features</a></li>
+                                        <li><a href="/">Blog</a></li>
+                                        <li><a href="/">How It Works</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,10 +50,10 @@ const Footer:FC = ():JSX.Element => {
                                         <h3>Links</h3>
                                     </div>
                                     <ul className="links-list">
-                                        <li><a href="#">Help</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Clients</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="/">Help</a></li>
+                                        <li><a href="/">Support</a></li>
+                                        <li><a href="/">Clients</a></li>
+                                        <li><a href="/">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,10 +63,10 @@ const Footer:FC = ():JSX.Element => {
                                         <h3>Follow</h3>
                                     </div>
                                     <div className="social-block">
-                                        <a href="#"><i className="fa fa-twitter"></i></a>
-                                        <a href="#"><i className="fa fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fa fa-instagram"></i></a>
-                                        <a href="#"><i className="fa fa-dribbble"></i></a>
+                                        <a href="/"><i className="fa fa-twitter"></i></a>
+                                        <a href="/"><i className="fa fa-facebook-f"></i></a>
+                                        <a href="/"><i className="fa fa-instagram"></i></a>
+                                        <a href="/"><i className="fa fa-dribbble"></i></a>
                                     </div>
                                 </div>
                             </div>
