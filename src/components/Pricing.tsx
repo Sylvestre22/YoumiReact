@@ -55,7 +55,7 @@ const Pricing:FC = ():JSX.Element =>{
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="single-pricing-one pro-pack">
                                     <div className="top-block">
-                                        <span className="price ">$30.00</span>
+                                        <span className="price ">30.00€</span>
                                         <span className="pack-name">Professional pack</span>
                                         <div className="line"></div>
                                     </div>
@@ -74,7 +74,7 @@ const Pricing:FC = ():JSX.Element =>{
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="single-pricing-one biz-pack">
                                     <div className="top-block">
-                                        <span className="price">$40.00</span>
+                                        <span className="price">40.00€</span>
                                         <span className="pack-name">Business pack</span>
                                         <div className="line"></div>
                                     </div>
@@ -97,7 +97,7 @@ const Pricing:FC = ():JSX.Element =>{
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="single-pricing-one basic-pack">
                                     <div className="top-block">
-                                        <span className="price">$75.00</span>
+                                        <span className="price">75.00€</span>
                                         <span className="pack-name">basic pack</span>
                                         <div className="line"></div>
                                     </div>
