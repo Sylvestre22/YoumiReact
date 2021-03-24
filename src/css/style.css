@@ -2853,3 +2853,10 @@ hr.style-one {
         width: 100% !important;
     }
 }
+
+
+/* CustomCSS */
+
+.logo {
+    width: 85px;
+}

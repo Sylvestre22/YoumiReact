@@ -1,4 +1,5 @@
 import React, {FunctionComponent as FC, Fragment} from 'react'
+import Logo from '../images/logo/YoumiLogo.png'
 
 const Footer:FC = ():JSX.Element => {
     return(
@@ -15,7 +16,7 @@ const Footer:FC = ():JSX.Element => {
                         <div className="row">
                             <div className="col-lg-2 col-md-6 col-sm-12">
                                 <div className="footer-widget">
-                                    <a href="index.html"><img src="images/logo-1-1.png" alt="LOGO" /></a>
+                                    <a href="index.html"><img className="logo" src={Logo} alt="LOGO" /></a>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-12">

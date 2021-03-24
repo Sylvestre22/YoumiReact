@@ -1,6 +1,7 @@
 import React, {FunctionComponent as FC, useState, useEffect} from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Scrollspy from 'react-scrollspy';
+import Logo from '../images/logo/YoumiLogo.png';
 
 const Nav:FC = ():JSX.Element =>{
     const [isOpen, setIsOpen] = useState(false),
@@ -18,7 +19,7 @@ const Nav:FC = ():JSX.Element =>{
                 <div className="container clearfix">
                     <div className="logo-box clearfix">
                         <HashLink to="/#banner" className="navbar-brand" href="index.html">
-                            <img src="images/logo-1-1.png" alt="LOGO" />
+                            <img className="logo" src={Logo} alt="LOGO" />
                         </HashLink>
                         <button className="menu-toggler" data-target=".header-one .main-navigation">
                             <span className="fa fa-bars" onClick={()=> setIsOpen((!isOpen))}></span>
