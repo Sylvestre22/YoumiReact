@@ -12,7 +12,7 @@
     "@types/react-dom": "^17.0.1",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-scrollspy": "^3.3.3",
-    "axios": "^0.21.1",
+    "axios": "^1.6.4",
     "chokidar-cli": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
